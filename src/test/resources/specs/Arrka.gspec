@@ -1,0 +1,21 @@
+#Declaring objects with css and xpath locators
+@objects
+  arrka-logo     xpath     (//img[@class='custom-logo'])[1]
+  login_button   xpath     //a[normalize-space()='Login']
+  signup_button  xpath     //div[@class='ast-custom-button']
+
+= Skeleton =
+    arrka-logo:
+        height 63px
+        inside screen 35px left, >= 54px top
+        left-of login_button
+
+    login_button:
+        inside screen 54px top
+        left-of signup_button 24px
+        width 8px
+
+    signup_button:
+        height 90px
+        inside screen 36px right, >= 54px top
+        width 37px

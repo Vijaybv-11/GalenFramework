@@ -1,0 +1,252 @@
+{
+  "testId" : "1-arkka-testing",
+  "name" : "Arkka Testing",
+  "report" : {
+    "nodes" : [ {
+      "name" : "check Arkka homepage layout",
+      "status" : "error",
+      "time" : 1690633015297,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Skeleton",
+        "place" : {
+          "filePath" : "specs/Arrka.gspec",
+          "lineNumber" : 7
+        },
+        "objects" : [ {
+          "name" : "arrka-logo",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/Arrka.gspec",
+              "lineNumber" : 9
+            },
+            "name" : "height 63px",
+            "meta" : [ {
+              "from" : {
+                "object" : "arrka-logo",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "arrka-logo",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "63px",
+              "realDistance" : "63px"
+            } ],
+            "highlight" : [ "arrka-logo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/Arrka.gspec",
+              "lineNumber" : 10
+            },
+            "name" : "inside screen 35px left, >= 54px top",
+            "meta" : [ {
+              "from" : {
+                "object" : "arrka-logo",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "left"
+              },
+              "expectedDistance" : "35px",
+              "realDistance" : "35px"
+            }, {
+              "from" : {
+                "object" : "arrka-logo",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "top"
+              },
+              "expectedDistance" : ">= 54px",
+              "realDistance" : "89px"
+            } ],
+            "highlight" : [ "arrka-logo", "screen" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/Arrka.gspec",
+              "lineNumber" : 11
+            },
+            "name" : "left-of login_button",
+            "meta" : [ {
+              "from" : {
+                "object" : "arrka-logo",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "login_button",
+                "edge" : "left"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "704px"
+            } ],
+            "highlight" : [ "arrka-logo", "login_button" ]
+          } ]
+        }, {
+          "name" : "login_button",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/Arrka.gspec",
+              "lineNumber" : 14
+            },
+            "name" : "inside screen 54px top",
+            "errors" : [ "\"login_button\" is 53px top instead of 54px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "login_button",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "top"
+              },
+              "expectedDistance" : "54px",
+              "realDistance" : "53px"
+            } ],
+            "highlight" : [ "login_button", "screen" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/Arrka.gspec",
+              "lineNumber" : 15
+            },
+            "name" : "left-of signup_button 24px",
+            "errors" : [ "\"login_button\" is 21px left of \"signup_button\" instead of 24px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "login_button",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "signup_button",
+                "edge" : "left"
+              },
+              "expectedDistance" : "24px",
+              "realDistance" : "21px"
+            } ],
+            "highlight" : [ "login_button", "signup_button" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/Arrka.gspec",
+              "lineNumber" : 16
+            },
+            "name" : "width 8px",
+            "meta" : [ {
+              "from" : {
+                "object" : "login_button",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "login_button",
+                "edge" : "right"
+              },
+              "expectedDistance" : "8px",
+              "realDistance" : "8px"
+            } ],
+            "highlight" : [ "login_button" ]
+          } ]
+        }, {
+          "name" : "signup_button",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/Arrka.gspec",
+              "lineNumber" : 19
+            },
+            "name" : "height 90px",
+            "meta" : [ {
+              "from" : {
+                "object" : "signup_button",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "signup_button",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "90px",
+              "realDistance" : "90px"
+            } ],
+            "highlight" : [ "signup_button" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/Arrka.gspec",
+              "lineNumber" : 20
+            },
+            "name" : "inside screen 36px right, >= 54px top",
+            "errors" : [ "\"signup_button\" is 35px right instead of 36px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "signup_button",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "right"
+              },
+              "expectedDistance" : "36px",
+              "realDistance" : "35px"
+            }, {
+              "from" : {
+                "object" : "signup_button",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "top"
+              },
+              "expectedDistance" : ">= 54px",
+              "realDistance" : "75px"
+            } ],
+            "highlight" : [ "signup_button", "screen" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/Arrka.gspec",
+              "lineNumber" : 21
+            },
+            "name" : "width 37px",
+            "errors" : [ "\"signup_button\" width is 38px instead of 37px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "signup_button",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "signup_button",
+                "edge" : "right"
+              },
+              "expectedDistance" : "37px",
+              "realDistance" : "38px"
+            } ],
+            "highlight" : [ "signup_button" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "arrka-logo" : {
+          "area" : [ 35, 89, 150, 63 ]
+        },
+        "login_button" : {
+          "area" : [ 889, 53, 8, 131 ]
+        },
+        "screen" : {
+          "area" : [ 0, 0, 991, 4037 ]
+        },
+        "signup_button" : {
+          "area" : [ 918, 75, 38, 90 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

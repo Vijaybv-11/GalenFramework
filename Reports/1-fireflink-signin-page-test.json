@@ -1,0 +1,392 @@
+{
+  "testId" : "1-fireflink-signin-page-test",
+  "name" : "FireFlink Signin Page Test",
+  "report" : {
+    "nodes" : [ {
+      "name" : "signin Test",
+      "status" : "error",
+      "time" : 1691056744729,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Skeleton",
+        "place" : {
+          "filePath" : "specs/fireflink.gspec",
+          "lineNumber" : 9
+        },
+        "objects" : [ {
+          "name" : "signin-button",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 11
+            },
+            "name" : "below email-textfield",
+            "meta" : [ {
+              "from" : {
+                "object" : "signin-button",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "email-textfield",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "146px"
+            } ],
+            "highlight" : [ "signin-button", "email-textfield" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 12
+            },
+            "name" : "height 40px",
+            "meta" : [ {
+              "from" : {
+                "object" : "signin-button",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "signin-button",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "40px",
+              "realDistance" : "40px"
+            } ],
+            "highlight" : [ "signin-button" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 13
+            },
+            "name" : "inside screen 90px left, >= 40px right",
+            "errors" : [ "\"signin-button\" is 84px left instead of 90px" ],
+            "meta" : [ {
+              "from" : {
+                "object" : "signin-button",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "left"
+              },
+              "expectedDistance" : "90px",
+              "realDistance" : "84px"
+            }, {
+              "from" : {
+                "object" : "signin-button",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "right"
+              },
+              "expectedDistance" : ">= 40px",
+              "realDistance" : "245px"
+            } ],
+            "highlight" : [ "signin-button", "screen" ]
+          } ]
+        }, {
+          "name" : "header-signin",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 17
+            },
+            "name" : "above forgot-password",
+            "meta" : [ {
+              "from" : {
+                "object" : "header-signin",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "forgot-password",
+                "edge" : "top"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "126px"
+            } ],
+            "highlight" : [ "header-signin", "forgot-password" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 18
+            },
+            "name" : "below fireflink-logo",
+            "meta" : [ {
+              "from" : {
+                "object" : "header-signin",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "fireflink-logo",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "299px"
+            } ],
+            "highlight" : [ "header-signin", "fireflink-logo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 19
+            },
+            "name" : "inside screen 81px left, >= 51px right",
+            "meta" : [ {
+              "from" : {
+                "object" : "header-signin",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "left"
+              },
+              "expectedDistance" : "81px",
+              "realDistance" : "81px"
+            }, {
+              "from" : {
+                "object" : "header-signin",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "right"
+              },
+              "expectedDistance" : ">= 51px",
+              "realDistance" : "140px"
+            } ],
+            "highlight" : [ "header-signin", "screen" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 29
+            },
+            "name" : "height 54px",
+            "meta" : [ {
+              "from" : {
+                "object" : "header-signin",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "header-signin",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "54px",
+              "realDistance" : "54px"
+            } ],
+            "highlight" : [ "header-signin" ]
+          } ]
+        }, {
+          "name" : "email-textfield",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 17
+            },
+            "name" : "above forgot-password",
+            "meta" : [ {
+              "from" : {
+                "object" : "email-textfield",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "forgot-password",
+                "edge" : "top"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "115px"
+            } ],
+            "highlight" : [ "email-textfield", "forgot-password" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 18
+            },
+            "name" : "below fireflink-logo",
+            "meta" : [ {
+              "from" : {
+                "object" : "email-textfield",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "fireflink-logo",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "339px"
+            } ],
+            "highlight" : [ "email-textfield", "fireflink-logo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 19
+            },
+            "name" : "inside screen 81px left, >= 51px right",
+            "meta" : [ {
+              "from" : {
+                "object" : "email-textfield",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "left"
+              },
+              "expectedDistance" : "81px",
+              "realDistance" : "81px"
+            }, {
+              "from" : {
+                "object" : "email-textfield",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "right"
+              },
+              "expectedDistance" : ">= 51px",
+              "realDistance" : "150px"
+            } ],
+            "highlight" : [ "email-textfield", "screen" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 22
+            },
+            "name" : "height 25px",
+            "meta" : [ {
+              "from" : {
+                "object" : "email-textfield",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "email-textfield",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "25px",
+              "realDistance" : "25px"
+            } ],
+            "highlight" : [ "email-textfield" ]
+          } ]
+        }, {
+          "name" : "fireflink-logo",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 25
+            },
+            "name" : "height 78px",
+            "meta" : [ {
+              "from" : {
+                "object" : "fireflink-logo",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "fireflink-logo",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "78px",
+              "realDistance" : "78px"
+            } ],
+            "highlight" : [ "fireflink-logo" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 26
+            },
+            "name" : "inside screen 11px right, >= 56px left",
+            "errors" : [ "\"fireflink-logo\" is not completely inside. The offset is 11px." ],
+            "highlight" : [ "fireflink-logo", "screen" ]
+          } ]
+        }, {
+          "name" : "forgot-password",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 32
+            },
+            "name" : "height 20px",
+            "meta" : [ {
+              "from" : {
+                "object" : "forgot-password",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "forgot-password",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "20px",
+              "realDistance" : "20px"
+            } ],
+            "highlight" : [ "forgot-password" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/fireflink.gspec",
+              "lineNumber" : 33
+            },
+            "name" : "inside screen 56px right, >= 56px left",
+            "meta" : [ {
+              "from" : {
+                "object" : "forgot-password",
+                "edge" : "right"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "right"
+              },
+              "expectedDistance" : "56px",
+              "realDistance" : "56px"
+            }, {
+              "from" : {
+                "object" : "forgot-password",
+                "edge" : "left"
+              },
+              "to" : {
+                "object" : "screen",
+                "edge" : "left"
+              },
+              "expectedDistance" : ">= 56px",
+              "realDistance" : "321px"
+            } ],
+            "highlight" : [ "forgot-password", "screen" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "signin-button" : {
+          "area" : [ 84, 577, 173, 40 ]
+        },
+        "email-textfield" : {
+          "area" : [ 81, 406, 271, 25 ]
+        },
+        "screen" : {
+          "area" : [ 0, 0, 502, 649 ]
+        },
+        "header-signin" : {
+          "area" : [ 81, 366, 281, 54 ]
+        },
+        "forgot-password" : {
+          "area" : [ 321, 546, 125, 20 ]
+        },
+        "fireflink-logo" : {
+          "area" : [ 156, -11, 270, 78 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

@@ -1,0 +1,7 @@
+#here i am going to verify the google home screen elements
+@objects
+ google-logo  xpath   //img[@alt="Google"]
+ textfield    xpath   //textarea[@name="q"]
+ signin-button  xpath  //span[text()='Sign in']
+ Gmail-link     xpath   //a[text()='Gmail']
+ Images-link   xpath    //a[text()='Images']

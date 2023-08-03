@@ -1,0 +1,33 @@
+@objects
+ fireflink-logo     xpath     //img[@alt='logo']
+ header-signin      xpath     (//h3[normalize-space()='Sign in'])[1]
+ email-textfield    xpath     //input[@id='mui-1']
+ password-textfield xpath     (//input[@id='mui-1'])[2]
+ forgot-password    css       a[href='/forget-password']
+ signin-button      css     button[type='submit']
+
+= Skeleton =
+    signin-button:
+        below email-textfield
+        height 40px
+        inside screen 90px left, >= 40px right
+
+
+    header-signin, email-textfield:
+        above forgot-password
+        below fireflink-logo
+        inside screen 81px left, >= 51px right
+
+    email-textfield:
+        height 25px
+
+    fireflink-logo:
+        height 78px
+        inside screen 11px right, >= 56px left
+
+    header-signin:
+        height 54px
+
+    forgot-password:
+        height 20px
+        inside screen 56px right, >= 56px left

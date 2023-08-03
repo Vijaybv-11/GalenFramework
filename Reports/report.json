@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "FireFlink Signin Page Test",
+    "startedAt" : 1691056744729,
+    "endedAt" : 1691056744729,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 13,
+      "errors" : 2,
+      "warnings" : 0,
+      "total" : 15
+    },
+    "testId" : "1-fireflink-signin-page-test",
+    "duration" : 0,
+    "failed" : true
+  } ]
+}

@@ -5,3 +5,36 @@
  signin-button  xpath  //span[text()='Sign in']
  Gmail-link     xpath   //a[text()='Gmail']
  Images-link   xpath    //a[text()='Images']
+
+= Skeleton =
+    Gmail-link:
+       aligned horizontally all Images-link 15px
+
+    Gmail-link, Images-link:
+        above google-logo
+        height 24px
+        inside screen 18px top
+
+    Gmail-link:
+        width 34px
+
+    signin-button:
+
+        above textfield
+        height 16px
+        inside screen 22px top, 37px right
+        right-of Images-link
+        width 44px
+
+    google-logo:
+        above textfield 38px
+        centered horizontally inside screen 1px
+
+    textfield:
+        height 27px
+
+    Images-link:
+        width 42px
+
+    textfield, google-logo:
+        inside screen >= 37px right

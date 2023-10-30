@@ -1,0 +1,13 @@
+@objects
+ seo-text   xpath   //div[@id="text_block-8-15"]
+
+= Skeleton =
+    seo-text:
+        centered horizontally inside screen 1px
+        height 51px
+        inside screen
+        text singleline is "Accelerate your career, multiply your opportunities- Pave your"
+        css font-size is "16px"
+        css line-height is "1.6"
+        css font-weight is "400"
+        css font-family is "gilroy"

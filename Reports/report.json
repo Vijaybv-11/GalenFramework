@@ -1,16 +1,16 @@
 {
   "tests" : [ {
-    "name" : "FireFlink Signin Page Test",
-    "startedAt" : 1691056744729,
-    "endedAt" : 1691056744729,
+    "name" : "DigitalSeo  Page Test",
+    "startedAt" : 1692359145337,
+    "endedAt" : 1692359145337,
     "failed" : true,
     "statistic" : {
-      "passed" : 13,
+      "passed" : 6,
       "errors" : 2,
       "warnings" : 0,
-      "total" : 15
+      "total" : 8
     },
-    "testId" : "1-fireflink-signin-page-test",
+    "testId" : "1-digitalseo-page-test",
     "duration" : 0,
     "failed" : true
   } ]

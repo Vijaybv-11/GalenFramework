@@ -1,6 +1,6 @@
 #Declaring objects with css and xpath locators
 @objects
-  arrka-logo     xpath     (//img[@class='custom-logo'])[1]
+  arrka-logo       xpath     (//img[@class='custom-logo'])[1]
   login_button   xpath     //a[normalize-space()='Login']
   signup_button  xpath     //div[@class='ast-custom-button']
 

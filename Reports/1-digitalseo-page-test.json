@@ -1,0 +1,113 @@
+{
+  "testId" : "1-digitalseo-page-test",
+  "name" : "DigitalSeo  Page Test",
+  "report" : {
+    "nodes" : [ {
+      "name" : "SEo Test",
+      "status" : "error",
+      "time" : 1692359145338,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Skeleton",
+        "place" : {
+          "filePath" : "specs/digitalseo.gspec",
+          "lineNumber" : 4
+        },
+        "objects" : [ {
+          "name" : "seo-text",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/digitalseo.gspec",
+              "lineNumber" : 6
+            },
+            "name" : "centered horizontally inside screen 1px",
+            "highlight" : [ "seo-text", "screen" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/digitalseo.gspec",
+              "lineNumber" : 7
+            },
+            "name" : "height 51px",
+            "meta" : [ {
+              "from" : {
+                "object" : "seo-text",
+                "edge" : "top"
+              },
+              "to" : {
+                "object" : "seo-text",
+                "edge" : "bottom"
+              },
+              "expectedDistance" : "51px",
+              "realDistance" : "51px"
+            } ],
+            "highlight" : [ "seo-text" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/digitalseo.gspec",
+              "lineNumber" : 8
+            },
+            "name" : "inside screen",
+            "meta" : [ ],
+            "highlight" : [ "seo-text", "screen" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/digitalseo.gspec",
+              "lineNumber" : 9
+            },
+            "name" : "text singleline is \"Accelerate your career, multiply your opportunities- Pave your\"",
+            "errors" : [ "\"seo-text\" text is \"Accelerate your career, multiply your opportunities- Pave your path to in-demand skills for an unbeatable tech career.\" but should be \"Accelerate your career, multiply your opportunities- Pave your\"" ],
+            "highlight" : [ "seo-text" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/digitalseo.gspec",
+              "lineNumber" : 10
+            },
+            "name" : "css font-size is \"16px\"",
+            "highlight" : [ "seo-text" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/digitalseo.gspec",
+              "lineNumber" : 11
+            },
+            "name" : "css line-height is \"1.6\"",
+            "errors" : [ "\"seo-text\" css property \"line-height\" is \"25.6px\" but should be \"1.6\"" ],
+            "highlight" : [ "seo-text" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/digitalseo.gspec",
+              "lineNumber" : 12
+            },
+            "name" : "css font-weight is \"400\"",
+            "highlight" : [ "seo-text" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/digitalseo.gspec",
+              "lineNumber" : 13
+            },
+            "name" : "css font-family is \"gilroy\"",
+            "highlight" : [ "seo-text" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "screen" : {
+          "area" : [ 0, 0, 483, 11318 ]
+        },
+        "seo-text" : {
+          "area" : [ 20, 681, 443, 51 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}
